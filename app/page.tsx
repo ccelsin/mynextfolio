@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
 import deved from './images/sapiens.png';
 import design from './images/design.png';
@@ -22,10 +22,19 @@ export default function Home() {
             <nav className="py-10 mb-12 flex justify-between">
               <h1 className="text-xl font-mono">MadebyMaodan</h1>
               <ul className="flex items-center">
+                
                 <li>
                   <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
                 </li>
-                <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+                <li>
+                  <a
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="/CV_Alternance_Maodan_ADJAGBONI.pdf" // Assurez-vous que votre CV s'appelle bien "cv.pdf"
+                    download // Ce mot-clé permet de déclencher le téléchargement
+                  >
+                    Resume
+                  </a>
+                </li>
               </ul>
             </nav>
             <div className="text-center p-10">
@@ -36,6 +45,7 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
               <AiFillLinkedin />
               <AiFillGithub />
+              <AiFillMail />
             </div>
             <div className="relative flex justify-center">
               <Image src={deved} alt="" />
@@ -82,9 +92,9 @@ export default function Home() {
           <section>
             <div>
               <h3 className="text-3xl py-1">Portfolio</h3>
-              <p className="text-md py-2 leading-8 text-gray-80">Dans le cadre de ma formation, j'ai eu à utiliser du <span className="text-teal-500">Java</span> , le Html, le Css, du <span className="text-teal-500">JavaScript</span> et les framework <span className="text-teal-500">React et Vue </span>pour concevoir des applications performantes et dynamiques. Ces technologies me permettent de créer des solutions robustes, évolutives et orientées utilisateur, tout en restant à la pointe des meilleures pratiques du développement.</p>
+              <p className="text-md py-2 leading-8 text-gray-80">Découvrez une sélection de mes <span className="text-teal-500">projets informatiques</span> où j'ai mis en pratique mes compétences en développement. Chaque projet reflète mon engagement à créer des solutions innovantes et fonctionnelles.</p>
               <p className="text-md py-2 leading-8 text-gray-80">
-              Pour concevoir des interfaces claires et intuitives, j'utilise des outils me permettant de créer des designs collaboratifs, précis et m'offrant la flexibilité nécessaire pour intégrer mes idées créatives directement dans mes projets de développement.
+              Que ce soit des <span className="text-teal-500">applications web </span>, des outils interactifs ou des <span className="text-teal-500">conceptions d'interfaces utilisateur</span>, ces réalisations illustrent mon parcours et ma passion pour le code.
               </p>
             </div>
           </section>
