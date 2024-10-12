@@ -8,9 +8,11 @@ import design from './images/design.png';
 import code from './images/code.png';
 import consulting from './images/consulting.png';
 import { useState } from "react";
+import { AiOutlineDownload } from "react-icons/ai";
+
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -21,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
+        <section className="min-h-screen" id="section1">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-mono dark:text-white">MadebyMaodan</h1>
             <ul className="flex items-center">
@@ -33,15 +35,26 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-md ml-6 flex items-center"
                   href="/CV_Alternance_Maodan_ADJAGBONI.pdf"
                   download
                 >
-                  Resume
+                  <AiOutlineDownload className="mr-2" /> Mon CV
                 </a>
               </li>
             </ul>
           </nav>
+          <div className="md:fixed md:right-5 md:top-1/2 md:transform md:-translate-y-1/2 md:space-y-16 hidden md:block">
+            <button onClick={() => document.getElementById('section1').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+              Contact
+            </button>
+            <button onClick={() => document.getElementById('section2').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+              About
+            </button>
+            <button onClick={() => document.getElementById('section3').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+              Projet
+            </button>
+          </div>
           <div className="text-center p-10">
             <h2 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400">
               Maodan ADJAGBONI
@@ -73,7 +86,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="section2">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">
               Mes technologies de prédilection
@@ -138,15 +151,53 @@ export default function Home() {
             <p className="text-gray-800 dark:text-gray-200">Consultation</p>
           </div>
         </section>
-        <section>
+        <section id="section3">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Projets</h3> 
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Découvrez une sélection de mes <span className="text-teal-500">projets informatiques</span> où j'ai mis en pratique mes compétences en développement. Chaque projet reflète mon engagement à créer des solutions innovantes et fonctionnelles.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Que ce soit des <span className="text-teal-500">applications web</span>, des outils interactifs ou des <span className="text-teal-500">conceptions d'interfaces utilisateur</span>, ces réalisations illustrent mon parcours et ma passion pour le code.
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Projet 1 */}
+            <div className="text-center shadow-lg p-10 rounded-xl my-2 dark:bg-gray-800">
+              <h3 className="text-lg font-medium pt-2 pb-2 dark:text-white">Ownlands</h3>
+              <p className="py-2 dark:text-gray-200">
+                Plateforme web pour les acteurs du monde foncier
+              </p>
+              <a href="https://dev.ownland.fr" className="text-teal-600 dark:text-teal-400">Voir plus</a>
+            </div>
+
+            {/* Projet 2 */}
+            <div className="text-center shadow-lg p-10 rounded-xl my-1 dark:bg-gray-800">
+              <h3 className="text-lg font-medium pt-2 pb-2 dark:text-white">FitGroove</h3>
+              <p className="py-2 dark:text-gray-200">
+              Application web de recherche de clubs de sport
+              </p>
+              <a href="#" className="text-teal-600 dark:text-teal-400">Voir plus</a>
+            </div>
+
+            {/* Projet 3 */}
+            <div className="text-center shadow-lg p-10 rounded-xl my-1 dark:bg-gray-800">
+              <h3 className="text-lg font-medium pt-5 pb-2 dark:text-white">Mancala</h3>
+              <p className="py-2 dark:text-gray-200">
+                Jeu desktop inspiré du jeu de pion Mancala
+              </p>
+              <a href="#" className="text-teal-600 dark:text-teal-400">Voir plus</a>
+            </div>
+
+            {/* Projet 4 */}
+            <div className="text-center shadow-lg p-10 rounded-xl my-1 dark:bg-gray-800">
+              <h3 className="text-lg font-medium pt-5 pb-2 dark:text-white">FLFamily</h3>
+              <p className="py-2 dark:text-gray-200">
+                Application web de gestion de parties de jeux en ligne
+              </p>
+              <a href="#" className="text-teal-600 dark:text-teal-400">Voir plus</a>
+            </div>
           </div>
         </section>
 
