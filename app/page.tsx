@@ -45,13 +45,37 @@ export default function Home() {
             </ul>
           </nav>
           <div className="md:fixed md:right-5 md:top-1/2 md:transform md:-translate-y-1/2 md:space-y-16 hidden md:block">
-            <button onClick={() => document.getElementById('section1').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+            <button
+              onClick={() => {
+                const section1 = document.getElementById('section1');
+                if (section1) {
+                  section1.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700"
+            >
               Contact
             </button>
-            <button onClick={() => document.getElementById('section2').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+            <button
+              onClick={() => {
+                const section2 = document.getElementById('section2');
+                if (section2) {
+                  section2.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700"
+            >
               About
             </button>
-            <button onClick={() => document.getElementById('section3').scrollIntoView({ behavior: 'smooth' })} className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700">
+            <button
+              onClick={() => {
+                const section3 = document.getElementById('section3');
+                if (section3) {
+                  section3.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="w-20 h-20 rounded-full bg-teal-500 text-white text-lg flex justify-center items-center hover:bg-teal-700"
+            >
               Projet
             </button>
           </div>
