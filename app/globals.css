@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importing Google Fonts */
-
-
 :root {
   --background: #ffffff;
   --foreground: #333333;
@@ -15,8 +12,6 @@ body {
   background: var(--background);
   font-family: monospace, Arial, Helvetica, sans-serif;
 }
-
-/* Optional: If you need a specific class for Bebas Neue font */
 
 /* Custom Tailwind CSS Utility */
 @layer utilities {
@@ -30,3 +25,17 @@ body {
   font-family: "geist";
   src: url("/fonts/GeistVF.woff");
 }
+
+/* Smooth transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09090b;
+    --foreground: #fafafa;
+  }
+}
+
