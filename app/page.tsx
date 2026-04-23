@@ -192,7 +192,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="gap-2 bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 shadow-lg hover:shadow-xl transition-shadow">
-                  <a href="/CV_MAODAN_ADJAGBONI_CDI.pdf" download>
+                  <a href="/CV_Maodan_ADJAGBONI_Développeur_Fullstack.pdf" download>
                     <AiOutlineDownload className="text-lg" />
                     Télécharger le CV
                   </a>
