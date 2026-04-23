@@ -186,7 +186,7 @@ export default function Home() {
                   <span className="block"></span>
                 </h1>
                 <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg">
-                  Ingénieur fullstack passionné. Spécialisé en React, Spring Boot et DevOps. Je crée des applications web robustes, élégantes et performantes.
+                  Ingénieur fullstack passionné. Spécialisé en React, .NET, Spring Boot et en DevOps. Je crée des applications web robustes, élégantes et performantes.
                 </p>
               </div>
 
