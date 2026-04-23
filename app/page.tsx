@@ -63,7 +63,7 @@ const experiences = [
     company: "Capgemini Engineering  Toulouse",
     period: "Mai 2025 - Octobre 2025",
     points: [
-      "Conception de modules Frontend WPF et Backend .NET/C#.",
+      "Conception de modules Frontend React et WPF et Backend .NET/C#.",
       "Mise en place et maintenance de pipelines CI/CD (GitLab CI, Jenkins, JFrog Artifactory).",
       "Gestion de migrations de base de données et optimisation multithreading.",
       "Contribution à l'intégration continue et aux tests logiciels en environnement Agile/Scrum.",
@@ -74,7 +74,7 @@ const experiences = [
     company: "DEFAR SCI  Rouen",
     period: "Juillet 2024 - Septembre 2024",
     points: [
-      "Développement web avec Vue.js/Nuxt.js et Spring Boot.",
+      "Développement web avec React et .NET.",
       "Conception d'API REST sécurisées et documentation Swagger.",
       "Conteneurisation et déploiement des services avec Docker.",
       "Intégration continue GitLab CI et consommation d'API externes (Google Maps).",
@@ -93,7 +93,7 @@ const projects = [
     name: "GotoEsig  Application de covoiturage",
     period: "Oct. 2024 - Déc. 2025",
     description:
-      "Développement Android Java avec Firebase, gestion de l'authentification et des trajets.",
+      "Développement mobile avec C# .NET pour la logique métier et React Native pour l'interface utilisateur, gestion de l'authentification et des trajets.",
   },
 ];
 
